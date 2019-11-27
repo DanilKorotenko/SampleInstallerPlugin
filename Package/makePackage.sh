@@ -21,10 +21,10 @@ cp "./GrantAccess/InstallerSections.plist" "${BUILT_PRODUCTS_DIR}/Plugins/"
 
 PRODUCT_PACKAGE="${BUILT_PRODUCTS_DIR}/HelloInstallerPlugin.pkg"
 
-pkgbuild --root "${BUILT_PRODUCTS_DIR}/package" \
+pkgbuild --root "${BUILT_PRODUCTS_DIR}/packageContent" \
     --identifier "com.YourCompany.Identifier" \
 	--ownership recommended \
-	--install-location "/Application/" \
+	--install-location "/Applications/" \
 	--scripts "./Package/scripts" \
 	"${PACKAGE_DIR}/package.pkg"
 
