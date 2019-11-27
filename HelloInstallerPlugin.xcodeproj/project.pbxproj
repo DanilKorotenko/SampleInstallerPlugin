@@ -6,6 +6,22 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		DA4C1FCD238EA816003DC2B3 /* Installer */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DA4C1FCE238EA816003DC2B3 /* Build configuration list for PBXAggregateTarget "Installer" */;
+			buildPhases = (
+				DA4C1FE2238EABE0003DC2B3 /* Make Package */,
+			);
+			dependencies = (
+				DA4C1FD4238EA82C003DC2B3 /* PBXTargetDependency */,
+				DA4C1FD2238EA828003DC2B3 /* PBXTargetDependency */,
+			);
+			name = Installer;
+			productName = Installer;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		DA4C1FA8238EA628003DC2B3 /* MyInstallerPane.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4C1FA7238EA628003DC2B3 /* MyInstallerPane.m */; };
 		DA4C1FAB238EA628003DC2B3 /* MyInstallerPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4C1FA9238EA628003DC2B3 /* MyInstallerPane.xib */; };
@@ -16,7 +32,29 @@
 		DA4C1FC2238EA6D4003DC2B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4C1FC1238EA6D4003DC2B3 /* Assets.xcassets */; };
 		DA4C1FC5238EA6D4003DC2B3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4C1FC3238EA6D4003DC2B3 /* MainMenu.xib */; };
 		DA4C1FC8238EA6D4003DC2B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4C1FC7238EA6D4003DC2B3 /* main.m */; };
+		DA4C1FDD238EA9B7003DC2B3 /* makePackage.sh in Resources */ = {isa = PBXBuildFile; fileRef = DA4C1FD6238EA9B7003DC2B3 /* makePackage.sh */; };
+		DA4C1FDE238EA9B7003DC2B3 /* components.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA4C1FD7238EA9B7003DC2B3 /* components.plist */; };
+		DA4C1FDF238EA9B7003DC2B3 /* postinstall in Resources */ = {isa = PBXBuildFile; fileRef = DA4C1FDA238EA9B7003DC2B3 /* postinstall */; };
+		DA4C1FE0238EA9B7003DC2B3 /* preinstall in Resources */ = {isa = PBXBuildFile; fileRef = DA4C1FDB238EA9B7003DC2B3 /* preinstall */; };
+		DA4C1FE1238EA9B7003DC2B3 /* distribution.xml in Resources */ = {isa = PBXBuildFile; fileRef = DA4C1FDC238EA9B7003DC2B3 /* distribution.xml */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA4C1FD1238EA828003DC2B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA4C1F99238EA5C6003DC2B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA4C1FBB238EA6D0003DC2B3;
+			remoteInfo = HelloGrantAccess;
+		};
+		DA4C1FD3238EA82C003DC2B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA4C1F99238EA5C6003DC2B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA4C1FA2238EA628003DC2B3;
+			remoteInfo = GrantAccess;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DA4C1FA3238EA628003DC2B3 /* GrantAccess.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrantAccess.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,6 +73,11 @@
 		DA4C1FC6238EA6D4003DC2B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA4C1FC7238EA6D4003DC2B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA4C1FC9238EA6D4003DC2B3 /* HelloGrantAccess.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HelloGrantAccess.entitlements; sourceTree = "<group>"; };
+		DA4C1FD6238EA9B7003DC2B3 /* makePackage.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = makePackage.sh; sourceTree = "<group>"; };
+		DA4C1FD7238EA9B7003DC2B3 /* components.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = components.plist; sourceTree = "<group>"; };
+		DA4C1FDA238EA9B7003DC2B3 /* postinstall */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = postinstall; sourceTree = "<group>"; };
+		DA4C1FDB238EA9B7003DC2B3 /* preinstall */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = preinstall; sourceTree = "<group>"; };
+		DA4C1FDC238EA9B7003DC2B3 /* distribution.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = distribution.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +101,7 @@
 		DA4C1F98238EA5C6003DC2B3 = {
 			isa = PBXGroup;
 			children = (
+				DA4C1FD5238EA9B7003DC2B3 /* Package */,
 				DA4C1FA5238EA628003DC2B3 /* GrantAccess */,
 				DA4C1FBD238EA6D0003DC2B3 /* HelloGrantAccess */,
 				DA4C1FA4238EA628003DC2B3 /* Products */,
@@ -99,6 +143,34 @@
 				DA4C1FC9238EA6D4003DC2B3 /* HelloGrantAccess.entitlements */,
 			);
 			path = HelloGrantAccess;
+			sourceTree = "<group>";
+		};
+		DA4C1FD5238EA9B7003DC2B3 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				DA4C1FD6238EA9B7003DC2B3 /* makePackage.sh */,
+				DA4C1FD7238EA9B7003DC2B3 /* components.plist */,
+				DA4C1FD8238EA9B7003DC2B3 /* resources */,
+				DA4C1FD9238EA9B7003DC2B3 /* scripts */,
+				DA4C1FDC238EA9B7003DC2B3 /* distribution.xml */,
+			);
+			path = Package;
+			sourceTree = "<group>";
+		};
+		DA4C1FD8238EA9B7003DC2B3 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		DA4C1FD9238EA9B7003DC2B3 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				DA4C1FDA238EA9B7003DC2B3 /* postinstall */,
+				DA4C1FDB238EA9B7003DC2B3 /* preinstall */,
+			);
+			path = scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +224,9 @@
 					DA4C1FBB238EA6D0003DC2B3 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
+					DA4C1FCD238EA816003DC2B3 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
 				};
 			};
 			buildConfigurationList = DA4C1F9C238EA5C6003DC2B3 /* Build configuration list for PBXProject "HelloInstallerPlugin" */;
@@ -169,6 +244,7 @@
 			targets = (
 				DA4C1FA2238EA628003DC2B3 /* GrantAccess */,
 				DA4C1FBB238EA6D0003DC2B3 /* HelloGrantAccess */,
+				DA4C1FCD238EA816003DC2B3 /* Installer */,
 			);
 		};
 /* End PBXProject section */
@@ -178,10 +254,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA4C1FE0238EA9B7003DC2B3 /* preinstall in Resources */,
 				DA4C1FAB238EA628003DC2B3 /* MyInstallerPane.xib in Resources */,
+				DA4C1FDD238EA9B7003DC2B3 /* makePackage.sh in Resources */,
 				DA4C1FB4238EA628003DC2B3 /* InfoPlist.strings in Resources */,
 				DA4C1FAE238EA628003DC2B3 /* Localizable.strings in Resources */,
+				DA4C1FDE238EA9B7003DC2B3 /* components.plist in Resources */,
+				DA4C1FE1238EA9B7003DC2B3 /* distribution.xml in Resources */,
 				DA4C1FB0238EA628003DC2B3 /* InstallerSections.plist in Resources */,
+				DA4C1FDF238EA9B7003DC2B3 /* postinstall in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +276,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DA4C1FE2238EABE0003DC2B3 /* Make Package */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Make Package";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Package/makePackage.sh\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA4C1F9F238EA628003DC2B3 /* Sources */ = {
@@ -215,6 +318,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA4C1FD2238EA828003DC2B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA4C1FBB238EA6D0003DC2B3 /* HelloGrantAccess */;
+			targetProxy = DA4C1FD1238EA828003DC2B3 /* PBXContainerItemProxy */;
+		};
+		DA4C1FD4238EA82C003DC2B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA4C1FA2238EA628003DC2B3 /* GrantAccess */;
+			targetProxy = DA4C1FD3238EA82C003DC2B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DA4C1FA9238EA628003DC2B3 /* MyInstallerPane.xib */ = {
@@ -323,7 +439,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.GTB.GrantAccess;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YourCompany.GrantAccess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -382,7 +498,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.GTB.GrantAccess;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YourCompany.GrantAccess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -454,7 +570,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.GTB.HelloGrantAccess;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YourCompany.HelloGrantAccess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -518,9 +634,27 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.GTB.HelloGrantAccess;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YourCompany.HelloGrantAccess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DA4C1FCF238EA816003DC2B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QBPW9LPK8E;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DA4C1FD0238EA816003DC2B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QBPW9LPK8E;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -550,6 +684,15 @@
 			buildConfigurations = (
 				DA4C1FCB238EA6D4003DC2B3 /* Debug */,
 				DA4C1FCC238EA6D4003DC2B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA4C1FCE238EA816003DC2B3 /* Build configuration list for PBXAggregateTarget "Installer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4C1FCF238EA816003DC2B3 /* Debug */,
+				DA4C1FD0238EA816003DC2B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

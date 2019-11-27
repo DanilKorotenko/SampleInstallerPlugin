@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# do any postinstall work here
+
+exit 0
