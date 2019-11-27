@@ -1,0 +1,68 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXGroup section */
+		DA4C1F98238EA5C6003DC2B3 = {
+			isa = PBXGroup;
+			children = (
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		DA4C1F99238EA5C6003DC2B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+			};
+			buildConfigurationList = DA4C1F9C238EA5C6003DC2B3 /* Build configuration list for PBXProject "HelloInstallerPlugin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA4C1F98238EA5C6003DC2B3;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		DA4C1F9D238EA5C7003DC2B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		DA4C1F9E238EA5C7003DC2B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA4C1F9C238EA5C6003DC2B3 /* Build configuration list for PBXProject "HelloInstallerPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4C1F9D238EA5C7003DC2B3 /* Debug */,
+				DA4C1F9E238EA5C7003DC2B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA4C1F99238EA5C6003DC2B3 /* Project object */;
+}
