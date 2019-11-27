@@ -9,4 +9,11 @@
 
 @interface MyInstallerPane : InstallerPane
 
+@property (assign) IBOutlet NSTextField *statusLabel;
+@property (assign) IBOutlet NSButton *updateButton;
+@property (assign) IBOutlet NSProgressIndicator *progressIndicator;
+
+- (IBAction)grantAccess:(id)sender;
+- (IBAction)updateStatus:(id)sender;
+
 @end
