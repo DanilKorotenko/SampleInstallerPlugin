@@ -65,7 +65,8 @@
 
 - (NSString *)title
 {
-    return [[NSBundle bundleForClass:[self class]] localizedStringForKey:@"PaneTitle" value:nil table:nil];
+    return [[NSBundle bundleForClass:[self class]]
+		localizedStringForKey:@"PaneTitle" value:nil table:nil];
 }
 
 - (BOOL)shouldExitPane:(InstallerSectionDirection)dir
@@ -75,6 +76,7 @@
 
 - (void)didEnterPane:(InstallerSectionDirection)dir
 {
+	self.previousEnabled = YES;
 	[self updateStatusLabel];
 }
 
