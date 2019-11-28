@@ -23,6 +23,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		A67B26C5239030F700F1C426 /* com.YourCompany.HelloGrantAccess.plist in Resources */ = {isa = PBXBuildFile; fileRef = A67B26C423902FD300F1C426 /* com.YourCompany.HelloGrantAccess.plist */; };
 		DA4C1FA8238EA628003DC2B3 /* MyInstallerPane.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4C1FA7238EA628003DC2B3 /* MyInstallerPane.m */; };
 		DA4C1FAB238EA628003DC2B3 /* MyInstallerPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4C1FA9238EA628003DC2B3 /* MyInstallerPane.xib */; };
 		DA4C1FAE238EA628003DC2B3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA4C1FAC238EA628003DC2B3 /* Localizable.strings */; };
@@ -32,11 +33,6 @@
 		DA4C1FC2238EA6D4003DC2B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4C1FC1238EA6D4003DC2B3 /* Assets.xcassets */; };
 		DA4C1FC5238EA6D4003DC2B3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4C1FC3238EA6D4003DC2B3 /* MainMenu.xib */; };
 		DA4C1FC8238EA6D4003DC2B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4C1FC7238EA6D4003DC2B3 /* main.m */; };
-		DA4C1FDD238EA9B7003DC2B3 /* makePackage.sh in Resources */ = {isa = PBXBuildFile; fileRef = DA4C1FD6238EA9B7003DC2B3 /* makePackage.sh */; };
-		DA4C1FDE238EA9B7003DC2B3 /* components.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA4C1FD7238EA9B7003DC2B3 /* components.plist */; };
-		DA4C1FDF238EA9B7003DC2B3 /* postinstall in Resources */ = {isa = PBXBuildFile; fileRef = DA4C1FDA238EA9B7003DC2B3 /* postinstall */; };
-		DA4C1FE0238EA9B7003DC2B3 /* preinstall in Resources */ = {isa = PBXBuildFile; fileRef = DA4C1FDB238EA9B7003DC2B3 /* preinstall */; };
-		DA4C1FE1238EA9B7003DC2B3 /* distribution.xml in Resources */ = {isa = PBXBuildFile; fileRef = DA4C1FDC238EA9B7003DC2B3 /* distribution.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A67B26C423902FD300F1C426 /* com.YourCompany.HelloGrantAccess.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = com.YourCompany.HelloGrantAccess.plist; sourceTree = "<group>"; };
 		DA4C1FA3238EA628003DC2B3 /* GrantAccess.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrantAccess.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4C1FA6238EA628003DC2B3 /* MyInstallerPane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyInstallerPane.h; sourceTree = "<group>"; };
 		DA4C1FA7238EA628003DC2B3 /* MyInstallerPane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyInstallerPane.m; sourceTree = "<group>"; };
@@ -98,9 +95,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A67B26C323902FD300F1C426 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A67B26C423902FD300F1C426 /* com.YourCompany.HelloGrantAccess.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		DA4C1F98238EA5C6003DC2B3 = {
 			isa = PBXGroup;
 			children = (
+				A67B26C323902FD300F1C426 /* Resources */,
 				DA4C1FD5238EA9B7003DC2B3 /* Package */,
 				DA4C1FA5238EA628003DC2B3 /* GrantAccess */,
 				DA4C1FBD238EA6D0003DC2B3 /* HelloGrantAccess */,
@@ -254,15 +260,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA4C1FE0238EA9B7003DC2B3 /* preinstall in Resources */,
 				DA4C1FAB238EA628003DC2B3 /* MyInstallerPane.xib in Resources */,
-				DA4C1FDD238EA9B7003DC2B3 /* makePackage.sh in Resources */,
 				DA4C1FB4238EA628003DC2B3 /* InfoPlist.strings in Resources */,
+				A67B26C5239030F700F1C426 /* com.YourCompany.HelloGrantAccess.plist in Resources */,
 				DA4C1FAE238EA628003DC2B3 /* Localizable.strings in Resources */,
-				DA4C1FDE238EA9B7003DC2B3 /* components.plist in Resources */,
-				DA4C1FE1238EA9B7003DC2B3 /* distribution.xml in Resources */,
 				DA4C1FB0238EA628003DC2B3 /* InstallerSections.plist in Resources */,
-				DA4C1FDF238EA9B7003DC2B3 /* postinstall in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
