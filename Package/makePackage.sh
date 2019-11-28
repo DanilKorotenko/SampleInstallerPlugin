@@ -30,3 +30,6 @@ pkgbuild --root "${BUILT_PRODUCTS_DIR}/packageContent" \
 
 productbuild --distribution "./Package/distribution.xml" --package-path "${PACKAGE_DIR}" --plugins "${BUILT_PRODUCTS_DIR}/Plugins/" "${PRODUCT_PACKAGE}"
 
+rm -rf "${BUILT_PRODUCTS_DIR}/package"
+rm -rf "${BUILT_PRODUCTS_DIR}/packageContent"
+rm -rf "${BUILT_PRODUCTS_DIR}/Plugins"
