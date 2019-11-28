@@ -31,20 +31,29 @@
 			@"/Applications/HelloGrantAccess.app/Contents/MacOS/HelloGrantAccess"]
 			arguments:@[@"-c"] error:&taskError terminationHandler:^(NSTask * _Nonnull aTask)
 		{
-			[self.updateButton setEnabled:YES];
-			[self.progressIndicator stopAnimation:nil];
-			[self.progressIndicator setHidden:YES];
-
 			if ([aTask terminationStatus] == 0) // access is granted
 			{
 				self.isFullDiskAccessGranted = YES;
 			}
 
-			[self updateStatusLabel];
+            [self performSelectorOnMainThread:@selector(updateUI) withObject:nil waitUntilDone:NO];
 		}];
-	[self.updateButton setEnabled:NO];
-	[self.progressIndicator setHidden:NO];
-	[self.progressIndicator startAnimation:nil];
+    
+    if (nil == taskError)
+    {
+        [self.updateButton setEnabled:NO];
+        [self.progressIndicator setHidden:NO];
+        [self.progressIndicator startAnimation:nil];
+    }
+}
+
+- (void)updateUI
+{
+    [self.updateButton setEnabled:YES];
+    [self.progressIndicator stopAnimation:nil];
+    [self.progressIndicator setHidden:YES];
+
+    [self updateStatusLabel];
 }
 
 - (void)updateStatusLabel
