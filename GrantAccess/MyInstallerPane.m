@@ -42,9 +42,12 @@
 
 			[self updateStatusLabel];
 		}];
-	[self.updateButton setEnabled:NO];
-	[self.progressIndicator setHidden:NO];
-	[self.progressIndicator startAnimation:nil];
+	if (nil == taskError)
+	{
+		[self.updateButton setEnabled:NO];
+		[self.progressIndicator setHidden:NO];
+		[self.progressIndicator startAnimation:nil];
+	}
 }
 
 - (void)updateStatusLabel
