@@ -25,22 +25,19 @@
             <rect key="frame" x="0.0" y="0.0" width="418" height="330"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HKA-4j-zip">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HKA-4j-zip">
                     <rect key="frame" x="18" y="198" width="147" height="16"/>
-                    <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" title="Full Disk Access status:" id="8Pz-K7-sMB">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <progressIndicator hidden="YES" wantsLayer="YES" fixedFrame="YES" maxValue="100" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="ivg-jA-agl">
+                <progressIndicator hidden="YES" wantsLayer="YES" maxValue="100" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="ivg-jA-agl">
                     <rect key="frame" x="259" y="174" width="16" height="16"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                 </progressIndicator>
-                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cMN-Rx-1cm">
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cMN-Rx-1cm">
                     <rect key="frame" x="121" y="126" width="176" height="32"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="push" title="Grant Full Disk Access" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YLV-wR-TV1">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
@@ -49,18 +46,16 @@
                         <action selector="grantAccess:" target="Qsn-FY-4qK" id="yyT-vf-FSw"/>
                     </connections>
                 </button>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bte-Ns-bWD">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Bte-Ns-bWD">
                     <rect key="frame" x="18" y="174" width="139" height="16"/>
-                    <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" title="HelloGrantAccess.app" id="pYp-A5-3aE">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XsD-NA-bmL">
-                    <rect key="frame" x="277" y="165" width="127" height="32"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XsD-NA-bmL">
+                    <rect key="frame" x="277" y="165" width="127" height="31"/>
                     <buttonCell key="cell" type="push" title="Update Status" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9w5-Tv-lJx">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
@@ -69,9 +64,8 @@
                         <action selector="updateStatus:" target="Qsn-FY-4qK" id="Pkr-TK-dDh"/>
                     </connections>
                 </button>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="irn-MN-Dne">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="irn-MN-Dne">
                     <rect key="frame" x="161" y="174" width="96" height="16"/>
-                    <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" title="Not Authorized" id="o1w-Qh-m86">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -79,6 +73,25 @@
                     </textFieldCell>
                 </textField>
             </subviews>
+            <constraints>
+                <constraint firstItem="cMN-Rx-1cm" firstAttribute="top" secondItem="XsD-NA-bmL" secondAttribute="bottom" constant="18" id="0p1-ji-6aw"/>
+                <constraint firstItem="XsD-NA-bmL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ivg-jA-agl" secondAttribute="trailing" constant="8" symbolic="YES" id="1jk-Kh-cnF"/>
+                <constraint firstAttribute="bottom" secondItem="cMN-Rx-1cm" secondAttribute="bottom" constant="133" id="Dr4-ZV-DCN"/>
+                <constraint firstItem="cMN-Rx-1cm" firstAttribute="centerX" secondItem="irn-MN-Dne" secondAttribute="centerX" id="EG5-bw-NFz"/>
+                <constraint firstItem="HKA-4j-zip" firstAttribute="top" secondItem="TUK-W2-vig" secondAttribute="top" constant="116" id="Fxi-Ms-rha"/>
+                <constraint firstItem="ivg-jA-agl" firstAttribute="leading" secondItem="irn-MN-Dne" secondAttribute="trailing" constant="4" id="IP3-Sw-9iK"/>
+                <constraint firstItem="Bte-Ns-bWD" firstAttribute="top" secondItem="HKA-4j-zip" secondAttribute="bottom" constant="8" symbolic="YES" id="Lo9-SN-CwH"/>
+                <constraint firstItem="irn-MN-Dne" firstAttribute="firstBaseline" secondItem="Bte-Ns-bWD" secondAttribute="baseline" id="O7Y-fj-uJL"/>
+                <constraint firstAttribute="trailing" secondItem="XsD-NA-bmL" secondAttribute="trailing" constant="20" id="TaB-7b-gOz"/>
+                <constraint firstItem="cMN-Rx-1cm" firstAttribute="top" secondItem="ivg-jA-agl" secondAttribute="bottom" constant="20" symbolic="YES" id="Wec-pg-Ulw"/>
+                <constraint firstItem="cMN-Rx-1cm" firstAttribute="centerX" secondItem="TUK-W2-vig" secondAttribute="centerX" id="bRq-3X-d7S"/>
+                <constraint firstItem="HKA-4j-zip" firstAttribute="leading" secondItem="TUK-W2-vig" secondAttribute="leading" constant="20" symbolic="YES" id="db3-oy-FRa"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HKA-4j-zip" secondAttribute="trailing" constant="20" symbolic="YES" id="kRQ-Fr-fxW"/>
+                <constraint firstItem="irn-MN-Dne" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Bte-Ns-bWD" secondAttribute="trailing" constant="8" symbolic="YES" id="q4l-BT-G4f"/>
+                <constraint firstItem="irn-MN-Dne" firstAttribute="centerY" secondItem="XsD-NA-bmL" secondAttribute="centerY" id="rpJ-mh-Bfj"/>
+                <constraint firstItem="HKA-4j-zip" firstAttribute="leading" secondItem="Bte-Ns-bWD" secondAttribute="leading" id="w4V-g3-3ls"/>
+                <constraint firstItem="irn-MN-Dne" firstAttribute="bottom" secondItem="ivg-jA-agl" secondAttribute="bottom" id="y3j-ca-XCg"/>
+            </constraints>
             <point key="canvasLocation" x="141" y="154"/>
         </customView>
     </objects>
