@@ -20,6 +20,19 @@
 			name = Installer;
 			productName = Installer;
 		};
+		DA4F0028255C507D0012764A /* Installer_drag */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DA4F002E255C507D0012764A /* Build configuration list for PBXAggregateTarget "Installer_drag" */;
+			buildPhases = (
+				DA4F002D255C507D0012764A /* Make Package */,
+			);
+			dependencies = (
+				DA4F0037255C50950012764A /* PBXTargetDependency */,
+				DA4F002B255C507D0012764A /* PBXTargetDependency */,
+			);
+			name = Installer_drag;
+			productName = Installer;
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
@@ -33,6 +46,11 @@
 		DA4C1FC2238EA6D4003DC2B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4C1FC1238EA6D4003DC2B3 /* Assets.xcassets */; };
 		DA4C1FC5238EA6D4003DC2B3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4C1FC3238EA6D4003DC2B3 /* MainMenu.xib */; };
 		DA4C1FC8238EA6D4003DC2B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4C1FC7238EA6D4003DC2B3 /* main.m */; };
+		DA4F0014255C50640012764A /* MyInstallerPane.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4F0013255C50640012764A /* MyInstallerPane.m */; };
+		DA4F0017255C50640012764A /* MyInstallerPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4F0015255C50640012764A /* MyInstallerPane.xib */; };
+		DA4F001A255C50640012764A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA4F0018255C50640012764A /* Localizable.strings */; };
+		DA4F001C255C50640012764A /* InstallerSections.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA4F001B255C50640012764A /* InstallerSections.plist */; };
+		DA4F0020255C50640012764A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA4F001E255C50640012764A /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +67,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = DA4C1FA2238EA628003DC2B3;
 			remoteInfo = GrantAccess;
+		};
+		DA4F002C255C507D0012764A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA4C1F99238EA5C6003DC2B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA4C1FBB238EA6D0003DC2B3;
+			remoteInfo = HelloGrantAccess;
+		};
+		DA4F0036255C50950012764A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA4C1F99238EA5C6003DC2B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA4F000F255C50630012764A;
+			remoteInfo = DragPlugin;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -75,6 +107,14 @@
 		DA4C1FDA238EA9B7003DC2B3 /* postinstall */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = postinstall; sourceTree = "<group>"; };
 		DA4C1FDB238EA9B7003DC2B3 /* preinstall */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = preinstall; sourceTree = "<group>"; };
 		DA4C1FDC238EA9B7003DC2B3 /* distribution.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = distribution.xml; sourceTree = "<group>"; };
+		DA4F0010255C50630012764A /* DragPlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragPlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4F0012255C50640012764A /* MyInstallerPane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyInstallerPane.h; sourceTree = "<group>"; };
+		DA4F0013255C50640012764A /* MyInstallerPane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyInstallerPane.m; sourceTree = "<group>"; };
+		DA4F0016255C50640012764A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MyInstallerPane.xib; sourceTree = "<group>"; };
+		DA4F0019255C50640012764A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA4F001B255C50640012764A /* InstallerSections.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InstallerSections.plist; sourceTree = "<group>"; };
+		DA4F001D255C50640012764A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA4F001F255C50640012764A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +126,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DA4C1FB9238EA6D0003DC2B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4F000D255C50630012764A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -110,6 +157,7 @@
 				DA4C1FD5238EA9B7003DC2B3 /* Package */,
 				DA4C1FA5238EA628003DC2B3 /* GrantAccess */,
 				DA4C1FBD238EA6D0003DC2B3 /* HelloGrantAccess */,
+				DA4F0011255C50630012764A /* DragPlugin */,
 				DA4C1FA4238EA628003DC2B3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,6 +167,7 @@
 			children = (
 				DA4C1FA3238EA628003DC2B3 /* GrantAccess.bundle */,
 				DA4C1FBC238EA6D0003DC2B3 /* HelloGrantAccess.app */,
+				DA4F0010255C50630012764A /* DragPlugin.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,6 +228,20 @@
 			path = scripts;
 			sourceTree = "<group>";
 		};
+		DA4F0011255C50630012764A /* DragPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				DA4F0012255C50640012764A /* MyInstallerPane.h */,
+				DA4F0013255C50640012764A /* MyInstallerPane.m */,
+				DA4F0015255C50640012764A /* MyInstallerPane.xib */,
+				DA4F0018255C50640012764A /* Localizable.strings */,
+				DA4F001B255C50640012764A /* InstallerSections.plist */,
+				DA4F001D255C50640012764A /* Info.plist */,
+				DA4F001E255C50640012764A /* InfoPlist.strings */,
+			);
+			path = DragPlugin;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -216,6 +279,23 @@
 			productReference = DA4C1FBC238EA6D0003DC2B3 /* HelloGrantAccess.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DA4F000F255C50630012764A /* DragPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA4F0023255C50640012764A /* Build configuration list for PBXNativeTarget "DragPlugin" */;
+			buildPhases = (
+				DA4F000C255C50630012764A /* Sources */,
+				DA4F000D255C50630012764A /* Frameworks */,
+				DA4F000E255C50630012764A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DragPlugin;
+			productName = DragPlugin;
+			productReference = DA4F0010255C50630012764A /* DragPlugin.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -232,6 +312,9 @@
 					};
 					DA4C1FCD238EA816003DC2B3 = {
 						CreatedOnToolsVersion = 11.2.1;
+					};
+					DA4F000F255C50630012764A = {
+						CreatedOnToolsVersion = 12.0.1;
 					};
 				};
 			};
@@ -251,6 +334,8 @@
 				DA4C1FA2238EA628003DC2B3 /* GrantAccess */,
 				DA4C1FBB238EA6D0003DC2B3 /* HelloGrantAccess */,
 				DA4C1FCD238EA816003DC2B3 /* Installer */,
+				DA4F000F255C50630012764A /* DragPlugin */,
+				DA4F0028255C507D0012764A /* Installer_drag */,
 			);
 		};
 /* End PBXProject section */
@@ -277,10 +362,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA4F000E255C50630012764A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4F0017255C50640012764A /* MyInstallerPane.xib in Resources */,
+				DA4F0020255C50640012764A /* InfoPlist.strings in Resources */,
+				DA4F001A255C50640012764A /* Localizable.strings in Resources */,
+				DA4F001C255C50640012764A /* InstallerSections.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		DA4C1FE2238EABE0003DC2B3 /* Make Package */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Make Package";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Package/makePackage.sh\n";
+			showEnvVarsInLog = 0;
+		};
+		DA4F002D255C507D0012764A /* Make Package */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -319,6 +434,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA4F000C255C50630012764A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4F0014255C50640012764A /* MyInstallerPane.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -331,6 +454,16 @@
 			isa = PBXTargetDependency;
 			target = DA4C1FA2238EA628003DC2B3 /* GrantAccess */;
 			targetProxy = DA4C1FD3238EA82C003DC2B3 /* PBXContainerItemProxy */;
+		};
+		DA4F002B255C507D0012764A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA4C1FBB238EA6D0003DC2B3 /* HelloGrantAccess */;
+			targetProxy = DA4F002C255C507D0012764A /* PBXContainerItemProxy */;
+		};
+		DA4F0037255C50950012764A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA4F000F255C50630012764A /* DragPlugin */;
+			targetProxy = DA4F0036255C50950012764A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -365,6 +498,30 @@
 				DA4C1FC4238EA6D4003DC2B3 /* Base */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		DA4F0015255C50640012764A /* MyInstallerPane.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA4F0016255C50640012764A /* Base */,
+			);
+			name = MyInstallerPane.xib;
+			sourceTree = "<group>";
+		};
+		DA4F0018255C50640012764A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA4F0019255C50640012764A /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		DA4F001E255C50640012764A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA4F001F255C50640012764A /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -664,6 +821,151 @@
 			};
 			name = Release;
 		};
+		DA4F0021255C50640012764A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = XQKX38U9F4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = DragPlugin/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GTB.DragPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		DA4F0022255C50640012764A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = XQKX38U9F4;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = DragPlugin/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GTB.DragPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		DA4F002F255C507D0012764A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QBPW9LPK8E;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DA4F0030255C507D0012764A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QBPW9LPK8E;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -699,6 +1001,24 @@
 			buildConfigurations = (
 				DA4C1FCF238EA816003DC2B3 /* Debug */,
 				DA4C1FD0238EA816003DC2B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA4F0023255C50640012764A /* Build configuration list for PBXNativeTarget "DragPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4F0021255C50640012764A /* Debug */,
+				DA4F0022255C50640012764A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA4F002E255C507D0012764A /* Build configuration list for PBXAggregateTarget "Installer_drag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4F002F255C507D0012764A /* Debug */,
+				DA4F0030255C507D0012764A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
