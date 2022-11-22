@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21225" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15505"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21225"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,11 +23,11 @@
             </connections>
         </customObject>
         <customView id="TUK-W2-vig" userLabel="View">
-            <rect key="frame" x="0.0" y="0.0" width="418" height="330"/>
+            <rect key="frame" x="0.0" y="0.0" width="418" height="329"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HKA-4j-zip">
-                    <rect key="frame" x="18" y="198" width="147" height="16"/>
+                    <rect key="frame" x="18" y="197" width="147" height="16"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" title="Full Disk Access status:" id="8Pz-K7-sMB">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -34,10 +35,10 @@
                     </textFieldCell>
                 </textField>
                 <progressIndicator hidden="YES" wantsLayer="YES" maxValue="100" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="ivg-jA-agl">
-                    <rect key="frame" x="259" y="174" width="16" height="16"/>
+                    <rect key="frame" x="259" y="173" width="16" height="16"/>
                 </progressIndicator>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cMN-Rx-1cm">
-                    <rect key="frame" x="121" y="126" width="176" height="32"/>
+                    <rect key="frame" x="124" y="126" width="170" height="32"/>
                     <buttonCell key="cell" type="push" title="Grant Full Disk Access" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YLV-wR-TV1">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
@@ -47,7 +48,7 @@
                     </connections>
                 </button>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Bte-Ns-bWD">
-                    <rect key="frame" x="18" y="174" width="139" height="16"/>
+                    <rect key="frame" x="18" y="173" width="139" height="16"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" title="HelloGrantAccess.app" id="pYp-A5-3aE">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -55,7 +56,7 @@
                     </textFieldCell>
                 </textField>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XsD-NA-bmL">
-                    <rect key="frame" x="277" y="165" width="127" height="31"/>
+                    <rect key="frame" x="283" y="164" width="122" height="32"/>
                     <buttonCell key="cell" type="push" title="Update Status" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9w5-Tv-lJx">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
@@ -65,7 +66,7 @@
                     </connections>
                 </button>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="irn-MN-Dne">
-                    <rect key="frame" x="161" y="174" width="96" height="16"/>
+                    <rect key="frame" x="161" y="173" width="96" height="16"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" title="Not Authorized" id="o1w-Qh-m86">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
